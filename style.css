@@ -1,0 +1,67 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.main
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background: linear-gradient(235deg,#F591A9,#DC1F4D);
+}
+.container
+{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.list
+{
+	display: flex;
+	position: relative;		
+}
+.list:hover li
+{
+	filter: blur(2px);
+}
+.list li:before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0px;
+	height: 0px;
+	background: #fff;					
+}
+.list li:hover:before
+{
+	width: 	100%;
+	height: 5px;
+	transition: all 1s ease;		
+}
+.list li
+{
+	list-style: none;
+	margin: 7px;
+	padding: 10px;
+	position: 	relative;
+	transition: all 1s ease;	
+}
+.list li:hover
+{
+	background: #AA052D; 
+	transform: 	scale(1.2);
+	transition:all 1s ease;	
+	filter: blur(0px);	
+}
+.list li a
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: 27px;
+	font-weight: bolder;
+}
